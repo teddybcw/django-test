@@ -1,7 +1,7 @@
 pipeline {
     agent { docker 'python:3.6-alpine3.6'}
     stages {
-        stage('build') {
+        stage('Test') {
             steps {
                 sh 'python --version'
                 sh 'echo "Hello World"'
