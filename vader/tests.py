@@ -1,3 +1,9 @@
 from django.test import TestCase
 
-# Create your tests here.
+
+class TestVader(TestCase):
+    """."""
+
+    def test_satu_sama_dengan_dua(self):
+        """."""
+        self.assertEqual(1, 2)
