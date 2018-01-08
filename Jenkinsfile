@@ -8,6 +8,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python --version'
+                sh 'pip3 install django'
                 sh 'echo "Teddy ganteng!"'
                 sh 'python3 manage.py test'
             }
