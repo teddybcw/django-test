@@ -6,4 +6,4 @@ class TestVader(TestCase):
 
     def test_satu_sama_dengan_dua(self):
         """."""
-        self.assertEqual(1, 1)
+        self.assertEqual(1, 2)
