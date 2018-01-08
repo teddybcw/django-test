@@ -13,5 +13,12 @@ pipeline {
                 sh 'python3 manage.py test'
             }
         }
+        stage('testing') {
+            post {
+                always {
+                    sh 'python3 manage.py test'
+                }
+            }
+        }
     }
 }
