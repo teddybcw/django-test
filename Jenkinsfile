@@ -5,7 +5,7 @@ pipeline {
         }
     }
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
                 sh 'python --version'
                 sh 'pip3 install django'
@@ -13,11 +13,9 @@ pipeline {
                 sh 'python3 manage.py test'
             }
         }
-        stage('testing') {
-            post {
-                always {
-                    sh 'python3 manage.py test'
-                }
+        stage('Test') {
+            steps {
+                sh 'python3 manage.py test'
             }
         }
     }
