@@ -8,6 +8,8 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python --version'
+                sh 'echo "Teddy ganteng!"'
+                sh 'python3 manage.py test'
             }
         }
     }
